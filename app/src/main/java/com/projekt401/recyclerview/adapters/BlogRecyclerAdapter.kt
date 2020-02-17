@@ -45,7 +45,7 @@ class BlogRecyclerAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         val blogTitle = itemView.blog_title
         val blogAuthor = itemView.blog_author
 
-        fun bind(blogPost: BlogPost){
+        fun bind(blogPost: BlogPost) {
             blogTitle.setText(blogPost.title)
             blogAuthor.setText(blogPost.userName)
 
@@ -58,7 +58,5 @@ class BlogRecyclerAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
                 .load(blogPost.image)
                 .into(blogImage)
         }
-
     }
-
 }
